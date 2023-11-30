@@ -25,12 +25,12 @@ imgContainer.addEventListener("click", () => {
         video.play()
     }, 800);
     
-    if (giftBox.src === window.location.origin + "/asset/gift-box.png") {
-        giftBox.src = window.location.origin + "/asset/gift-box-open.png"
+    if (giftBox.src === window.location.origin + "/hpwd-anh-hien/asset/gift-box.png") {
+        giftBox.src = window.location.origin + "/hpwd-anh-hien/asset/gift-box-open.png"
         giftBox.alt = "gift-box-open"
         video.setAttribute("autoplay") = true
     } else {
-        giftBox.src = window.location.origin + "/asset/gift-box.png"
+        giftBox.src = window.location.origin + "/hpwd-anh-hien/asset/gift-box.png"
         giftBox.alt = "gift-box"
         videoPopup.style.display = "none"
     }
@@ -39,7 +39,7 @@ imgContainer.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     video.pause()
     video.autoplay = false;
-    giftBox.src = window.location.origin + "/asset/gift-box.png"
+    giftBox.src = window.location.origin + "/hpwd-anh-hien/asset/gift-box.png"
     giftBox.alt = "gift-box"
     videoPopup.classList.remove("show")
 })
